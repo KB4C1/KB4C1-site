@@ -6,10 +6,12 @@
   "bugs": {
     "url": "https://github.com/KB4C1/KB4C1-site/issues"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KB4C1/KB4C1-site.git"
   },
+
   "license": "MIT",
   "author": "KB4C1",
   "type": "commonjs",
@@ -19,6 +21,7 @@
     "build": "gulp build",
     "deploy": "gh-pages -d docs"
   },
+
   "devDependencies": {
     "gulp": "^5.0.1",
     "gulp-clean-css": "^4.3.0",
@@ -27,6 +30,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2"
   },
+  
   "dependencies": {
     "gulp-html-replace": "^1.6.2"
   }
