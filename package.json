@@ -1,0 +1,31 @@
+{
+  "name": "kb4c1-site",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/KB4C1/KB4C1-site#readme",
+  "bugs": {
+    "url": "https://github.com/KB4C1/KB4C1-site/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KB4C1/KB4C1-site.git"
+  },
+  "license": "MIT",
+  "author": "KB4C1",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-html-replace": "^1.6.2"
+  }
+}

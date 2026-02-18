@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB4C1 - main page</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <header>
+        <div id="menu-button-inner">
+            <button id="menu-button" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF">
+                    <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/>
+                </svg>
+            </button>
+        </div>
+        <h1>KB4C1</h1>
+    </header>
+
+    <div class="layout">
+        <aside>
+            <section class="aside-buttons-inner">
+                <button class="aside-btn" id="home-btn" onclick="window.location.href='index.html'">HOME</button>
+                <button class="aside-btn" id="inDev-btn" onclick="window.location.href='indev.html'">IN-DEV</button>
+                <button class="aside-btn" onclick="window.location.href='skills.html'" id="skills-btn">SKILLS</button>
+            </section>
+        </aside>
+
+        <main>
+            <h1 style="margin-bottom: 40px;">in-development projects</h1>
+            <div class="line"></div>
+
+            <section class="dev-section">
+                <div class="dev-card" id="project-this-site" data-progress="100">
+                    <h2 class="dev-card__title">This site</h2>
+
+                    <div class="progress" id="this-site-progress">
+                        <div class="progress__bar-inner">
+                            <div class="progress__bar">
+                                <span class="progress__value">100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dev-card" id="project-cs2__cv" data-progress="v3 developing">
+                    <h2 class="dev-card__title">Counter-Strike 2 CV model</h2>
+
+                    <div class="progress" id="cs2__cv">
+                        <h3>v3 developing in process...</h3>
+                    </div>
+                </div>
+                
+            </section>
+            <a href="indev.html">view more projects...</a>
+
+            <h1>skills</h1>
+            <div class="line"></div>
+
+            <section class="skills-section">
+                <div class="skill-card">
+                    <h2 class="skill-card__lang" id="nodejs">Node.js express backend servers, Telegram bots</h2>
+                    <div class="skill-learn-time">
+                        <span>&lt;6 months of learning</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h2 class="skill-card__lang" id="websites">Website layout</h2>
+                    <div class="skill-learn-time">
+                        <span>>2.5 years of experience</span>
+                    </div>
+                </div>
+            </section>
+            <a href="skills.html">view more skills...</a>
+
+            <h1>author`s links</h1>
+            <div class="line"></div>
+
+            <section class="social__media-section">
+                <div class="social__media-card" id="github">
+                    <h1>author`s Github</h1>
+                    <a target="_blank" href="https://github.com/KB4C1">https://github.com/KB4C1</a>
+                </div>
+                <div class="social__media-card" id="steam">
+                    <h1>author`s steam profile</h1>
+                    <a target="_blank" href="https://steamcommunity.com/id/KBAC_1/">https://steamcommunity.com/id/KBAC_1/</a>
+                </div>
+            </section>
+        </main>
+    </div>
+<!--build:js-->
+<script src="js/main.js"></script>
+<script src="js/utils/progressbars.js" defer></script>
+<!--endbuild-->
+</body>
+</html>
