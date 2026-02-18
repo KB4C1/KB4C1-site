@@ -30,7 +30,6 @@ function cssTask() {
 // JS
 function jsTask() {
     return src([
-        'src/js/utils/progressbars.js',
         'src/js/main.js'
     ])
         .pipe(sourcemaps.init())
@@ -44,7 +43,7 @@ function jsTask() {
 function watchFiles() {
     watch('src/*.html', htmlTask);
     watch('src/styles.css', cssTask);
-    watch('src/js/**/*.js', jsTask);
+    watch('src/js/*.js', jsTask);
 }
 
 exports.default = series(
